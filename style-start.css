@@ -1,4 +1,4 @@
-:root {
+ :root {
   --clr-primary-400: 263 55% 52%;
   --clr-secondary-400: 217 19% 35%;
   --clr-secondary-500: 219 29% 14%;
@@ -143,7 +143,16 @@ h3 {
 }
 
 /* components */
+
+.grid-col-span-2 {
+  grid-column: span 2;
+}
+
 .testimonial-grid {
+
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(4, 1fr);
   padding-block: 2rem;
   width: min(95%, 70rem);
   margin-inline: auto;
@@ -154,6 +163,10 @@ h3 {
   padding: 2rem;
   border-radius: 0.5rem;
   box-shadow: 2.5rem 3.75rem 3rem -3rem hsl(var(--clr-secondary-400) / 0.25);
+}
+
+.testimonial-last-child {
+  background: red;
 }
 
 .testimonial.quote {
